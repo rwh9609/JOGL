@@ -203,13 +203,13 @@ public class Snowflake extends JFrame implements GLEventListener {
 			outVector[0] = xVec/divider;
 			outVector[1] = yVec/divider;
 			// calculate Vb
-			if (V1[0] < V2[0] && V1[1] < V2[1]) { 
+			//if (V1[0] < V2[0] && V1[1] < V2[1]) { 
 			Vb[1] = m1[1] - outVector[1]*juttingDistance*(1/3f);
 			Vb[0] = m1[0] + outVector[0]*juttingDistance*(1/3f);
-			} else {
-			Vb[1] = m1[1] - outVector[1]*juttingDistance*(1/3f);
-			Vb[0] = m1[0] + outVector[0]*juttingDistance*(1/3f);
-			} 
+			//} else {
+			//Vb[1] = m1[1] - outVector[1]*juttingDistance*(1/3f);
+			//Vb[0] = m1[0] + outVector[0]*juttingDistance*(1/3f);
+			//} 
 			//Recurse
 			processLine(V1, Va, N-1);
 			processLine(Va, Vb, N-1);
