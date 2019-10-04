@@ -1,4 +1,3 @@
-package JOGL;
 
 
 import graphicslib3D.*;
